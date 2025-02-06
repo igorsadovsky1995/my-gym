@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { useAppDispatch,useAppSelector } from './hooks'
+import { useAppSelector } from './hooks'
 import { Item } from './components/Item';
 
 function App() {

@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+button{
+  margin-bottom: 10px;
+}
+.popup-step{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.popup-step.true{
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  width: calc(100% - 40px);
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #242424;
+}
+.step{
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+.step li{
+  display: inline-block;
+  margin: 0 10px;
+  list-style: none;
+}
+.step span{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 1px #bbb;
+  line-height: 100%;
+  background: #1a1a1a;
+  font-size: 20px;
+}
+.step li.action span{
+  background: #bbb;
+  color: #242424;
+}
+.timer{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.list-exercises{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: calc(100% - 40px);
+  height: 100%;
+  background: #242424;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  
+}
+
+.list-exercises.true{
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.buttons button{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

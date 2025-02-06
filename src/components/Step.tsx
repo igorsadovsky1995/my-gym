@@ -48,9 +48,7 @@ const Step:React.FC<props>=({arr,title,handlerShow})=>{
             <button onClick={handlerShow}>
                 &#60;
             </button>
-            <button onClick={handlerTimer}>
-                Сделал
-            </button>
+            {isCount ? '':(<button onClick={handlerTimer}>Сделал</button>)}
             <ul className="step">
                 {
                     arr.map((el,index)=>(

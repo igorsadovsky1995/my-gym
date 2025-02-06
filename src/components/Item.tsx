@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { todo } from "../type/interface";
 import { Step } from './Step';
 
-const Item:React.FC<todo>=({id,title,arr})=>{
+const Item:React.FC<todo>=({title,arr})=>{
     const [show,setShow]=useState(false);
     const handlerShow=()=>{
         setShow(!show);
